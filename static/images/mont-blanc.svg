@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mbBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#faf5ff"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+    <linearGradient id="meringue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf4ff"/>
+      <stop offset="100%" stop-color="#fae8ff"/>
+    </linearGradient>
+    <linearGradient id="marronPaste" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="chestnut" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="60%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#2d1204"/>
+    </linearGradient>
+    <linearGradient id="goldMb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <filter id="mbShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#mbBg)" rx="16"/>
+
+  <!-- Plate -->
+  <ellipse cx="200" cy="240" rx="140" ry="24" fill="#e2e8f0" opacity="0.8"/>
+  <ellipse cx="200" cy="236" rx="130" ry="20" fill="#ffffff" filter="url(#mbShadow)"/>
+
+  <!-- Tart / Biscuit Base -->
+  <ellipse cx="200" cy="220" rx="75" ry="18" fill="#d97706" filter="url(#mbShadow)"/>
+  <ellipse cx="200" cy="216" rx="70" ry="15" fill="#fef3c7"/>
+
+  <!-- Mont Blanc Mountain (Noodle Strands of Chestnut Paste) -->
+  <!-- Inner Shape Silhouette -->
+  <path d="M140 215 C130 180, 160 130, 200 120 C240 130, 270 180, 260 215 Z" fill="url(#marronPaste)" filter="url(#mbShadow)"/>
+
+  <!-- Piped String Strands (Curved Multi-strokes) -->
+  <g stroke="#b45309" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M138 210 Q160 195, 185 208 Q210 220, 260 210"/>
+    <path d="M142 195 Q175 180, 200 195 Q230 205, 258 195"/>
+    <path d="M145 180 Q180 165, 205 180 Q235 190, 255 180"/>
+    <path d="M150 165 Q185 150, 200 165 Q225 175, 250 165"/>
+    <path d="M160 150 Q185 138, 200 150 Q220 160, 240 150"/>
+    <path d="M170 138 Q190 128, 200 138 Q215 145, 230 138"/>
+  </g>
+  <g stroke="#d97706" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M140 205 Q170 190, 200 202 Q230 212, 258 204"/>
+    <path d="M144 188 Q180 172, 205 188 Q235 198, 254 188"/>
+    <path d="M152 172 Q185 158, 202 172 Q225 182, 248 172"/>
+    <path d="M165 156 Q190 144, 202 156 Q218 166, 235 156"/>
+  </g>
+
+  <!-- Powdered Sugar Dusting -->
+  <ellipse cx="200" cy="145" rx="35" ry="15" fill="#ffffff" opacity="0.3" filter="blur(2px)"/>
+  <circle cx="175" cy="160" r="1.5" fill="#ffffff"/>
+  <circle cx="190" cy="148" r="1.5" fill="#ffffff"/>
+  <circle cx="215" cy="155" r="1.5" fill="#ffffff"/>
+  <circle cx="225" cy="170" r="1.5" fill="#ffffff"/>
+
+  <!-- Candied Chestnut Crown (Shibukawani) on Top -->
+  <g transform="translate(200, 110)">
+    <path d="M0 -22 C-18 -15, -20 10, 0 16 C20 10, 18 -15, 0 -22 Z" fill="url(#chestnut)" filter="url(#mbShadow)"/>
+    <!-- Chestnut Highlight Sheen -->
+    <path d="M-8 -12 Q-12 0, -6 8" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+    <!-- Chestnut Base texture -->
+    <path d="M-12 12 Q0 18, 12 12" stroke="#a16207" stroke-width="2" fill="none"/>
+    <!-- Pure Gold Leaf on Chestnut -->
+    <polygon points="-2,-10 3,-6 1,-2 -4,-6" fill="url(#goldMb)"/>
+  </g>
+</svg>

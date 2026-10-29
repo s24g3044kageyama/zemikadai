@@ -1,0 +1,10 @@
+# Build artifacts
+*.class
+target/
+build/
+
+# IDE / OS files
+.DS_Store
+.idea/
+*.iml
+.vscode/

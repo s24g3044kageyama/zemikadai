@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pbBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf2f8"/>
+      <stop offset="100%" stop-color="#fce7f3"/>
+    </linearGradient>
+    <linearGradient id="pistachioGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bef264"/>
+      <stop offset="100%" stop-color="#65a30d"/>
+    </linearGradient>
+    <linearGradient id="framboiseGlace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="50%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#9f1239"/>
+    </linearGradient>
+    <filter id="pbShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#pbBg)" rx="16"/>
+
+  <!-- Plate -->
+  <ellipse cx="200" cy="240" rx="140" ry="24" fill="#e2e8f0" opacity="0.8"/>
+  <ellipse cx="200" cy="236" rx="130" ry="20" fill="#ffffff" filter="url(#pbShadow)"/>
+
+  <!-- Dome Cake Base (Pistachio Sponge Base) -->
+  <ellipse cx="200" cy="215" rx="72" ry="20" fill="#4d7c0f"/>
+
+  <!-- Pistachio Mousse Dome Body -->
+  <path d="M130 210 C130 145, 270 145, 270 210 C270 225, 130 225, 130 210 Z" fill="url(#pistachioGrad)" filter="url(#pbShadow)"/>
+
+  <!-- Framboise Mirror Glaze Drip Overlay -->
+  <path d="M130 195 C145 185, 160 200, 175 190 C190 205, 210 190, 225 200 C240 188, 255 198, 270 192 C265 140, 135 140, 130 195 Z" fill="url(#framboiseGlace)"/>
+
+  <!-- Glossy Reflection on Dome -->
+  <path d="M150 155 Q200 135, 250 155" stroke="#ffffff" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <ellipse cx="170" cy="160" rx="12" ry="5" fill="#ffffff" opacity="0.6" transform="rotate(-20 170 160)"/>
+
+  <!-- Fresh Raspberries on Top -->
+  <!-- Center Raspberry -->
+  <g transform="translate(190, 135)">
+    <circle cx="0" cy="0" r="10" fill="#be123c" filter="url(#pbShadow)"/>
+    <circle cx="-5" cy="-4" r="3.5" fill="#f43f5e"/>
+    <circle cx="2" cy="-5" r="3.5" fill="#f43f5e"/>
+    <circle cx="-3" cy="3" r="3.5" fill="#f43f5e"/>
+    <circle cx="4" cy="2" r="3.5" fill="#f43f5e"/>
+    <circle cx="0" cy="-1" r="2" fill="#fda4af"/>
+  </g>
+  <!-- Second Raspberry -->
+  <g transform="translate(212, 142)">
+    <circle cx="0" cy="0" r="9" fill="#be123c" filter="url(#pbShadow)"/>
+    <circle cx="-4" cy="-3" r="3" fill="#f43f5e"/>
+    <circle cx="2" cy="-4" r="3" fill="#f43f5e"/>
+    <circle cx="3" cy="2" r="3" fill="#f43f5e"/>
+  </g>
+
+  <!-- Crushed Pistachio Bits around base -->
+  <g fill="#4d7c0f">
+    <circle cx="140" cy="216" r="3"/>
+    <circle cx="152" cy="220" r="2.5"/>
+    <circle cx="168" cy="223" r="3"/>
+    <circle cx="230" cy="222" r="2.5"/>
+    <circle cx="248" cy="218" r="3"/>
+    <circle cx="260" cy="215" r="2"/>
+  </g>
+
+  <!-- White Chocolate Curve Decoration -->
+  <path d="M175 145 C190 105, 225 110, 215 140" stroke="#fef08a" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

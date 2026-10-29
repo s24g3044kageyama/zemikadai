@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ショッピングカート - Pâtisserie Douceur</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- サイトヘッダー -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="brand-link">
+        <span class="brand-icon">🍰</span>
+        <div>
+          <span class="brand-title">Pâtisserie Douceur</span>
+          <span class="brand-sub">Artisan Sweets & Bakery</span>
+        </div>
+      </a>
+
+      <!-- 商品一覧に戻るリンク -->
+      <a href="/" class="back-link">
+        <span>← 商品一覧に戻る</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main class="main-container">
+    <div class="cart-page-header">
+      <div>
+        <h2 class="section-title">ショッピングカート</h2>
+        <p class="section-subtitle">ご注文内容をご確認ください。内容はページ再読み込み後も維持されます。</p>
+      </div>
+      <!-- 商品一覧に戻るボタン -->
+      <a href="/" class="back-link">
+        <span>🏪 お買い物を続ける</span>
+      </a>
+    </div>
+
+    <!-- カート内容表示エリア -->
+    <div id="cartContentArea">
+      <!-- JavaScriptによりカート内容、または空カート表示を挿入 -->
+      <div class="empty-cart-view" id="loadingCartView">
+        <p>カート情報を読み込み中...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- トースト通知コンテナ -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <p class="footer-copy">© 2026 Pâtisserie Douceur. All rights reserved. Powered by Java Web Server.</p>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pâtisserie Douceur - 至高のケーキ通販</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- サイトヘッダー -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="brand-link">
+        <span class="brand-icon">🍰</span>
+        <div>
+          <h1 class="brand-title">Pâtisserie Douceur</h1>
+          <span class="brand-sub">Artisan Sweets & Bakery</span>
+        </div>
+      </a>
+
+      <!-- カート画面へのナビゲーションリンク -->
+      <a href="/cart.html" class="nav-cart-btn" id="navCartBtn" title="カートを見る">
+        <span>🛒 カート</span>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ヒーローバナー -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <span class="hero-tag">✨ 厳選素材と職人技が織りなす極上スイーツ</span>
+      <h2 class="hero-title">特別な日に、至福のひとくちを。</h2>
+      <p class="hero-desc">
+        北海道産生クリーム、フランス産クーベルチュール、旬の完熟果実。<br>
+        パティシエが一つひとつ丹精込めて焼き上げた特製ケーキを、出来立ての風味そのままにお届けします。
+      </p>
+    </div>
+  </section>
+
+  <!-- メインコンテンツ -->
+  <main class="main-container">
+    <div class="section-header">
+      <h2 class="section-title">Seasonal Cakes Collection</h2>
+      <p class="section-subtitle">季節のケーキコレクション（全品クール便にて全国配送）</p>
+    </div>
+
+    <!-- 商品一覧グリッド -->
+    <div class="product-grid" id="productGrid">
+      <!-- JavaScript有効時はAPIから動的描画、初期表示またはフォールバック用HTML -->
+      <noscript>
+        <!-- JavaScript無効環境向けサーバー連携フォーム (代表例) -->
+        <p style="grid-column: 1 / -1; padding: 1rem; background: #fff3cd; border-radius: 8px;">
+          ※ JavaScriptが無効でもサーバー側（Java）でのフォーム送信によりカート追加・管理が可能です。
+        </p>
+      </noscript>
+    </div>
+  </main>
+
+  <!-- トースト通知コンテナ -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <p class="footer-copy">© 2026 Pâtisserie Douceur. All rights reserved. Powered by Java Web Server.</p>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

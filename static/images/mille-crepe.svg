@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mcBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <linearGradient id="crepeSkin" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="custard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+    <linearGradient id="caramelTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <filter id="mcShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#mcBg)" rx="16"/>
+
+  <!-- Plate -->
+  <ellipse cx="200" cy="240" rx="140" ry="24" fill="#e2e8f0" opacity="0.8"/>
+  <ellipse cx="200" cy="236" rx="130" ry="20" fill="#ffffff" filter="url(#mcShadow)"/>
+
+  <!-- Mille-Crepe Triangle Wedge -->
+  <!-- Base Cream & Layers Stack -->
+  <path d="M120 160 L260 175 L280 160 L240 135 Z" fill="url(#caramelTop)" filter="url(#mcShadow)"/>
+  <path d="M120 160 L260 175 L260 215 L120 200 Z" fill="url(#custard)"/>
+  <path d="M260 175 L280 160 L280 200 L260 215 Z" fill="#fef9c3"/>
+
+  <!-- 15 Thin Crepe Layer Lines on Front Cut -->
+  <g stroke="#b45309" stroke-width="1.2" opacity="0.75">
+    <line x1="120" y1="163" x2="260" y2="178"/>
+    <line x1="120" y1="166" x2="260" y2="181"/>
+    <line x1="120" y1="169" x2="260" y2="184"/>
+    <line x1="120" y1="172" x2="260" y2="187"/>
+    <line x1="120" y1="175" x2="260" y2="190"/>
+    <line x1="120" y1="178" x2="260" y2="193"/>
+    <line x1="120" y1="181" x2="260" y2="196"/>
+    <line x1="120" y1="184" x2="260" y2="199"/>
+    <line x1="120" y1="187" x2="260" y2="202"/>
+    <line x1="120" y1="190" x2="260" y2="205"/>
+    <line x1="120" y1="193" x2="260" y2="208"/>
+    <line x1="120" y1="196" x2="260" y2="211"/>
+  </g>
+
+  <!-- Side Curved Crepe Folds -->
+  <g stroke="#d97706" stroke-width="1.2" opacity="0.7">
+    <line x1="260" y1="178" x2="280" y2="163"/>
+    <line x1="260" y1="184" x2="280" y2="169"/>
+    <line x1="260" y1="190" x2="280" y2="175"/>
+    <line x1="260" y1="196" x2="280" y2="181"/>
+    <line x1="260" y1="202" x2="280" y2="187"/>
+    <line x1="260" y1="208" x2="280" y2="193"/>
+  </g>
+
+  <!-- Caramelized Brulee Top Pattern -->
+  <ellipse cx="210" cy="155" rx="30" ry="10" fill="#78350f" opacity="0.3" transform="rotate(-10 210 155)"/>
+  <ellipse cx="180" cy="150" rx="15" ry="6" fill="#b45309" opacity="0.4"/>
+  <ellipse cx="230" cy="150" rx="18" ry="7" fill="#451a03" opacity="0.3"/>
+
+  <!-- Whipped Cream Dollop & Strawberry on Side of Plate -->
+  <path d="M100 215 C90 195, 115 195, 110 215 Z" fill="#ffffff" filter="url(#mcShadow)"/>
+  <circle cx="103" cy="208" r="6" fill="#ef4444"/>
+  <!-- Mint Leaf -->
+  <path d="M107 203 Q115 195, 117 202" stroke="#16a34a" stroke-width="2.5" fill="none"/>
+</svg>

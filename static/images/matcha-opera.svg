@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="moBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="matchaDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="matchaCream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#86efac"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="matchaBiscuit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="ganache" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3f2314"/>
+      <stop offset="100%" stop-color="#27150b"/>
+    </linearGradient>
+    <linearGradient id="goldMo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <filter id="moShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#moBg)" rx="16"/>
+
+  <!-- Plate (Black Ceramic Style) -->
+  <ellipse cx="200" cy="240" rx="145" ry="24" fill="#334155" opacity="0.3"/>
+  <ellipse cx="200" cy="236" rx="135" ry="20" fill="#1e293b" filter="url(#moShadow)"/>
+
+  <!-- Opera Cake (Rectangular Multi-layer) -->
+  <!-- Layer 1: Dark Chocolate Base -->
+  <path d="M130 205 L270 205 L270 215 L130 215 Z" fill="url(#ganache)"/>
+  <!-- Layer 2: Biscuit Joconde soaked in Matcha -->
+  <path d="M130 195 L270 195 L270 205 L130 205 Z" fill="url(#matchaBiscuit)"/>
+  <!-- Layer 3: Matcha Buttercream -->
+  <path d="M130 185 L270 185 L270 195 L130 195 Z" fill="url(#matchaCream)"/>
+  <!-- Layer 4: Dark Chocolate Ganache -->
+  <path d="M130 175 L270 175 L270 185 L130 185 Z" fill="url(#ganache)"/>
+  <!-- Layer 5: Biscuit Joconde -->
+  <path d="M130 165 L270 165 L270 175 L130 175 Z" fill="url(#matchaBiscuit)"/>
+  <!-- Layer 6: Matcha Buttercream -->
+  <path d="M130 155 L270 155 L270 165 L130 165 Z" fill="url(#matchaCream)"/>
+  <!-- Layer 7: Matcha Glaze Top -->
+  <path d="M125 145 L275 145 L275 155 L125 155 Z" fill="url(#matchaDark)" filter="url(#moShadow)"/>
+
+  <!-- Glossy Reflection on Top Glaze -->
+  <path d="M135 147 L265 147" stroke="#22c55e" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Gold Leaf Flakes Decoration -->
+  <g fill="url(#goldMo)">
+    <polygon points="160,138 165,142 163,145 158,143"/>
+    <polygon points="200,135 208,137 205,143 198,140"/>
+    <polygon points="230,138 235,144 228,143"/>
+  </g>
+
+  <!-- Kuromame (Sweet Black Soybean) on Top -->
+  <ellipse cx="195" cy="140" rx="10" ry="7" fill="#18181b" filter="url(#moShadow)"/>
+  <ellipse cx="192" cy="138" rx="4" ry="2" fill="#ffffff" opacity="0.4"/>
+
+  <!-- Modern Chocolate Feather -->
+  <path d="M210 145 C220 120, 245 110, 255 125 C240 135, 225 140, 210 145 Z" fill="#3f2314"/>
+</svg>

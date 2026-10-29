@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#faf5ff"/>
+      <stop offset="100%" stop-color="#f3e8ff"/>
+    </linearGradient>
+    <linearGradient id="chocoIcing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="40%" stop-color="#271003"/>
+      <stop offset="100%" stop-color="#1c0b02"/>
+    </linearGradient>
+    <linearGradient id="spongeDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#582914"/>
+      <stop offset="100%" stop-color="#3d1c0c"/>
+    </linearGradient>
+    <linearGradient id="apricotJam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <filter id="stShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#stBg)" rx="16"/>
+
+  <!-- Plate -->
+  <ellipse cx="200" cy="240" rx="140" ry="24" fill="#e2e8f0" opacity="0.8"/>
+  <ellipse cx="200" cy="236" rx="130" ry="20" fill="#ffffff" filter="url(#stShadow)"/>
+
+  <!-- Cake Body -->
+  <!-- Bottom Layer -->
+  <path d="M125 185 L275 185 L275 215 C235 226, 165 226, 125 215 Z" fill="url(#spongeDark)"/>
+  <!-- Apricot Jam Middle Layer -->
+  <path d="M125 178 L275 178 L275 185 L125 185 Z" fill="url(#apricotJam)"/>
+  <!-- Top Sponge Layer -->
+  <path d="M125 140 L275 140 L275 178 L125 178 Z" fill="url(#spongeDark)"/>
+  
+  <!-- Chocolate Glaze Outer Shell (Glossy Finish) -->
+  <path d="M120 135 Q200 120, 280 135 L280 215 C235 230, 165 230, 120 215 Z" fill="url(#chocoIcing)" opacity="0.95" filter="url(#stShadow)"/>
+  
+  <!-- Glaze Highlight Reflections -->
+  <path d="M135 142 Q195 130, 265 142" stroke="#78350f" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M145 150 Q170 144, 205 147" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3"/>
+
+  <!-- Sachertorte Chocolate Seal (Seal Crest) -->
+  <g transform="translate(200, 150)">
+    <circle cx="0" cy="0" r="22" fill="#2d1204" stroke="url(#gold)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="18" fill="none" stroke="url(#gold)" stroke-width="0.8" stroke-dasharray="2 2"/>
+    <text x="0" y="5" font-family="'Times New Roman', serif" font-size="12" font-weight="bold" fill="url(#gold)" text-anchor="middle">HOTEL</text>
+  </g>
+
+  <!-- Side Whipped Cream (Schlagobers) -->
+  <g transform="translate(285, 205)">
+    <path d="M-15 15 C-25 0, -5 -15, 5 -10 C15 -25, 30 -5, 20 15 Z" fill="#ffffff" filter="url(#stShadow)"/>
+    <path d="M-10 10 C-18 2, -2 -8, 6 -5" stroke="#f1f5f9" stroke-width="2" fill="none"/>
+    <!-- Mint on cream -->
+    <path d="M12 -12 Q20 -20, 24 -10 Q16 -8, 12 -12 Z" fill="#22c55e"/>
+  </g>
+
+  <!-- Gold Leaf Flakes on Cake -->
+  <rect x="160" y="140" width="5" height="5" fill="url(#gold)" transform="rotate(25 160 140)"/>
+  <rect x="235" y="142" width="4" height="4" fill="url(#gold)" transform="rotate(45 235 142)"/>
+</svg>
